@@ -1,9 +1,59 @@
 
 body {
+    background: #141313ea;
+    color:whitesmoke;
+    
     
 }
 
-div {
-   
+#header {
+  letter-spacing: 5px;
+  font-size:5.5rem;
+}
+
+
+
+#buttons {
+    gap: 100px;
+}
+
+#buttons button {
+    border-radius:0;
+    height:150px;
+    aspect-ratio: 1/1;
+    border-radius: 30%;
+    border:3px solid whitesmoke;
+    background-color: #141313ea;
+    box-shadow: 3px 3px 10px 3px #000000;
+}
+
+#buttons img {
+    height:50px;
+    aspect-ratio: 1/1;
+    ;
+}
+
+
+
+#buttons div {
+    margin-top:1rem;
+    transition: 0.2s !important;
+}
+
+#buttons button:hover {
+    background-color: #3b373740;
+}
+
+#buttons button:hover div {
+    display:flex;
+    font-size:1.5rem;
+    justify-content:center;
     
+}
+
+
+@media (max-width:770px) {
+    #buttons button {
+     display:none;
+    }
 }
